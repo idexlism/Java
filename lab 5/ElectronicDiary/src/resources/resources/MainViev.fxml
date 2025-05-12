@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.diary.DiaryController"
+      spacing="10">
+    <TextField fx:id="taskInput" promptText="Введите задачу"/>
+    <ListView fx:id="taskList"/>
+    <HBox spacing="10">
+        <Button text="Добавить" onAction="#handleAddTask"/>
+        <Button text="Редактировать" onAction="#handleEditTask"/>
+        <Button text="Удалить" onAction="#handleDeleteTask"/>
+    </HBox>
+</VBox>
